@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Aditions from "./Aditions";
 import Overtime from "./Overtime";
 import Deductions from "./Deductions";
+import Adition2 from "./Adition2";
 interface TabData {
     
     label: string;
@@ -58,7 +59,7 @@ function TabExample() {
         <div className="tabs-body">
           {activeTab === "at" && (
             <div>
-            <Aditions/>
+            <Adition2/>
             </div>
           )}
   

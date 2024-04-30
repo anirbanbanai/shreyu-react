@@ -1,3 +1,413 @@
+interface deduction{
+  name:string,
+  unit_amount:number
+}
+
+const Deduction :deduction[] = [
+  {
+    name: "Absent amount",
+    unit_amount: 52,
+  },
+  {
+    name: "Advance",
+    unit_amount: 33,
+  },
+  {
+    name: "Unpaid leave",
+    unit_amount: 40,
+  },
+  {
+    name: "Late coming fine",
+    unit_amount: 10,
+  },
+  {
+    name: "Loan repayment",
+    unit_amount: 25,
+  },
+  {
+    name: "Deduction for damages",
+    unit_amount: 15,
+  },
+  {
+    name: "Overpayment recovery",
+    unit_amount: 20,
+  },
+  {
+    name: "Tax deduction",
+    unit_amount: 30,
+  },
+  {
+    name: "Union dues",
+    unit_amount: 5,
+  },
+  {
+    name: "Medical insurance premium",
+    unit_amount: 50,
+  },
+  {
+    name: "Training cost recovery",
+    unit_amount: 40,
+  },
+  {
+    name: "Fine for policy violation",
+    unit_amount: 15,
+  },
+  {
+    name: "Uniform cost deduction",
+    unit_amount: 10,
+  },
+  {
+    name: "Professional association fees",
+    unit_amount: 20,
+  },
+  {
+    name: "Social security contribution",
+    unit_amount: 45,
+  },
+  {
+    name: "Legal fees deduction",
+    unit_amount: 35,
+  },
+  {
+    name: "Pension contribution",
+    unit_amount: 60,
+  },
+  {
+    name: "Employee assistance program",
+    unit_amount: 5,
+  },
+  {
+    name: "Child support deduction",
+    unit_amount: 30,
+  },
+  {
+    name: "Garnishment",
+    unit_amount: 25,
+  },
+  {
+    name: "Voluntary deduction",
+    unit_amount: 10,
+  },
+  {
+    name: "Travel expense reimbursement",
+    unit_amount: 45,
+  },
+  {
+    name: "Severance pay deduction",
+    unit_amount: 55,
+  },
+  {
+    name: "Dependent care assistance",
+    unit_amount: 20,
+  },
+  {
+    name: "Union strike fund contribution",
+    unit_amount: 15,
+  },
+  {
+    name: "Dental insurance premium",
+    unit_amount: 40,
+  },
+  {
+    name: "Miscellaneous deduction",
+    unit_amount: 5,
+  },
+  {
+    name: "Retirement plan contribution",
+    unit_amount: 50,
+  },
+  {
+    name: "Legal settlement deduction",
+    unit_amount: 25,
+  },
+];
+
+
+interface Table6 {
+  name:string,
+  rate:string
+}
+
+const TableData6:Table6[] = [
+  {
+    name: "Normal day OT 1.5x",
+    rate: "Hourly 1.5",
+  },
+  {
+    name: "Public holiday OT 3.0x",
+    rate: "Hourly 3",
+  },
+  {
+    name: "Rest day OT 2.0x",
+    rate: "Hourly 2",
+  },
+  {
+    name: "Weekend OT 2.0x",
+    rate: "Hourly 2",
+  },
+  {
+    name: "Emergency OT 2.5x",
+    rate: "Hourly 2.5",
+  },
+  {
+    name: "Night shift OT 2.0x",
+    rate: "Hourly 2",
+  },
+  {
+    name: "Double public holiday OT 6.0x",
+    rate: "Hourly 6",
+  },
+  {
+    name: "Festival OT 4.0x",
+    rate: "Hourly 4",
+  },
+  {
+    name: "Weekday evening OT 1.8x",
+    rate: "Hourly 1.8",
+  },
+  {
+    name: "Weekend night OT 2.5x",
+    rate: "Hourly 2.5",
+  },
+  {
+    name: "Unscheduled OT 2.0x",
+    rate: "Hourly 2",
+  },
+  {
+    name: "Summer vacation OT 2.0x",
+    rate: "Hourly 2",
+  },
+  {
+    name: "Early morning OT 1.8x",
+    rate: "Hourly 1.8",
+  },
+  {
+    name: "Late evening OT 2.0x",
+    rate: "Hourly 2",
+  },
+  {
+    name: "Holiday eve OT 2.5x",
+    rate: "Hourly 2.5",
+  },
+  {
+    name: "On-call OT 2.0x",
+    rate: "Hourly 2",
+  },
+  {
+    name: "Weekend morning OT 1.8x",
+    rate: "Hourly 1.8",
+  },
+  {
+    name: "Extended shift OT 2.5x",
+    rate: "Hourly 2.5",
+  },
+  {
+    name: "Night duty OT 2.0x",
+    rate: "Hourly 2",
+  },
+  {
+    name: "Snowstorm OT 3.5x",
+    rate: "Hourly 3.5",
+  },
+  {
+    name: "Weekend evening OT 2.0x",
+    rate: "Hourly 2",
+  },
+  {
+    name: "Midnight OT 2.0x",
+    rate: "Hourly 2",
+  },
+  {
+    name: "Monsoon OT 3.0x",
+    rate: "Hourly 3",
+  },
+  {
+    name: "Weekend afternoon OT 1.8x",
+    rate: "Hourly 1.8",
+  },
+  {
+    name: "Scheduled OT 2.0x",
+    rate: "Hourly 2",
+  },
+  {
+    name: "Daylight saving time OT 1.5x",
+    rate: "Hourly 1.5",
+  },
+  {
+    name: "Public event OT 3.5x",
+    rate: "Hourly 3.5",
+  },
+  {
+    name: "Weekend day OT 1.8x",
+    rate: "Hourly 1.8",
+  },
+  {
+    name: "Critical task OT 2.5x",
+    rate: "Hourly 2.5",
+  },
+];
+
+
+interface TableInterface {
+  name: string,
+  category:string,
+  unit_Amount: number
+}
+
+const TableData60: TableInterface[] = [
+  {
+    name: "Leave balance amount",
+    category: "Monthly remuneration",
+    unit_Amount: 4,
+  },
+  {
+    name: "Arrears of salary",
+    category: "Additional remuneration",
+    unit_Amount: 9,
+  },
+  {
+    name: "AGratuity",
+    category: "Additional remuneration",
+    unit_Amount: 19,
+  },
+  {
+    name: "Overtime pay",
+    category: "Additional remuneration",
+    unit_Amount: 15,
+  },
+  {
+    name: "Healthcare allowance",
+    category: "Additional benefits",
+    unit_Amount: 10,
+  },
+  {
+    name: "Transportation allowance",
+    category: "Additional benefits",
+    unit_Amount: 7,
+  },
+  {
+    name: "Annual bonus",
+    category: "Additional remuneration",
+    unit_Amount: 25,
+  },
+  {
+    name: "Education stipend",
+    category: "Additional benefits",
+    unit_Amount: 12,
+  },
+  {
+    name: "Housing allowance",
+    category: "Additional benefits",
+    unit_Amount: 20,
+  },
+  {
+    name: "Meal subsidy",
+    category: "Additional benefits",
+    unit_Amount: 8,
+  },
+  {
+    name: "Performance bonus",
+    category: "Additional remuneration",
+    unit_Amount: 30,
+  },
+  {
+    name: "Childcare allowance",
+    category: "Additional benefits",
+    unit_Amount: 15,
+  },
+  {
+    name: "Travel reimbursement",
+    category: "Additional benefits",
+    unit_Amount: 10,
+  },
+  {
+    name: "Profit sharing",
+    category: "Additional remuneration",
+    unit_Amount: 22,
+  },
+  {
+    name: "Communication allowance",
+    category: "Additional benefits",
+    unit_Amount: 5,
+  },
+  {
+    name: "Stock options",
+    category: "Additional remuneration",
+    unit_Amount: 18,
+  },
+  {
+    name: "Retirement benefits",
+    category: "Additional benefits",
+    unit_Amount: 28,
+  },
+  {
+    name: "Uniform allowance",
+    category: "Additional benefits",
+    unit_Amount: 7,
+  },
+  {
+    name: "Professional development subsidy",
+    category: "Additional benefits",
+    unit_Amount: 12,
+  },
+  {
+    name: "Performance awards",
+    category: "Additional remuneration",
+    unit_Amount: 35,
+  },
+  {
+    name: "Telecommuting stipend",
+    category: "Additional benefits",
+    unit_Amount: 10,
+  },
+  {
+    name: "Employee referral bonus",
+    category: "Additional remuneration",
+    unit_Amount: 15,
+  },
+  {
+    name: "Gym membership subsidy",
+    category: "Additional benefits",
+    unit_Amount: 15,
+  },
+  {
+    name: "Relocation allowance",
+    category: "Additional benefits",
+    unit_Amount: 30,
+  },
+  {
+    name: "Profit sharing",
+    category: "Additional remuneration",
+    unit_Amount: 22,
+  },
+  {
+    name: "Language proficiency bonus",
+    category: "Additional remuneration",
+    unit_Amount: 10,
+  },
+  {
+    name: "Wellness program subsidy",
+    category: "Additional benefits",
+    unit_Amount: 10,
+  },
+  {
+    name: "Company car allowance",
+    category: "Additional benefits",
+    unit_Amount: 25,
+  },
+  {
+    name: "Recognition awards",
+    category: "Additional remuneration",
+    unit_Amount: 20,
+  },
+  {
+    name: "Maternity/paternity leave pay",
+    category: "Additional benefits",
+    unit_Amount: 20,
+  }
+];
+
+
 interface Records {
   id: number;
   age: number;
@@ -1544,4 +1954,4 @@ const expandableRecords: ExpandableRecords[] = [
     ],
   },
 ];
-export { records, expandableRecords, Employee };
+export { records, expandableRecords, Employee,TableData60,TableData6,Deduction };
