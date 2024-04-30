@@ -616,7 +616,7 @@ function Example3() {
         <span className="text-white">Add Overtime</span>
       </Button>
 
-      <Modal show={show} size="xl" onHide={handleClose}>
+      <Modal show={show} size="lg" onHide={handleClose}>
         <Modal.Header closeButton>
           <h3>Add Overtimes</h3>
         </Modal.Header>
@@ -808,7 +808,7 @@ function Example4() {
         </svg>
         <span className="text-white">Add Deduction</span>
       </Button>
-      <Modal show={show} size="xl" onHide={handleClose}>
+      <Modal show={show} size="lg" onHide={handleClose}>
         <Modal.Header closeButton>
           <h3>Add Aditions</h3>
         </Modal.Header>
