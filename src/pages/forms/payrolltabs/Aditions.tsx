@@ -1,6 +1,5 @@
 import React from "react";
 import { Example2 } from "../../../components/Modal";
-import { ActionButton } from "./ActionButton";
 const TABLE_HEAD: string[] = ["Name", "Category", "Unit Amount", "Action"];
 
 const TableData60 = [
@@ -43,11 +42,7 @@ const Aditions = () => {
               <td>{name}</td>
               <td>{category}</td>
               <td>{unit_Amount}</td>
-              <td>
-               
-                
-                 <ActionButton/>
-              </td>
+              
             </tr>
           ))}
         </tbody>
