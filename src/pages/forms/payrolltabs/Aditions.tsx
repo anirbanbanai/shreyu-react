@@ -2,6 +2,7 @@ import React from "react";
 import { Example2 } from "../../../components/Modal";
 import { ActionButton } from "./ActionButton";
 const TABLE_HEAD: string[] = ["Name", "Category", "Unit Amount", "Action"];
+
 const TableData60 = [
   {
     name: "Leave balance amount",
@@ -19,6 +20,8 @@ const TableData60 = [
     unit_Amount: 19,
   },
 ];
+
+
 const Aditions = () => {
   return (
     <div>
